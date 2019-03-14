@@ -1,9 +1,19 @@
 
-<app-header titulo="alert page"></app-header>
+<app-header [titulo]='titulo || "alert page"'>
+  
+</app-header>
 
 
 <ion-content padding>
+    nombre: {{titulo}} <br>
+     fecha: {{dob}}
 
-  <h1>Alert Page</h1>
+  <ion-button (click)="presentInput()" color = 'secondary' expand='full'>
+    input
+  </ion-button>
+  <ion-button (click)="presentAlert()" color = 'primary' expand='full'>
+    alert
+  </ion-button>
+  
 
 </ion-content>

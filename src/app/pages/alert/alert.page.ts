@@ -9,6 +9,7 @@ import { AlertController } from '@ionic/angular';
 export class AlertPage implements OnInit {
 
   titulo: string;
+  dob: string;
 
   constructor( public alertCtrl: AlertController ) { }
 
@@ -19,12 +20,19 @@ export class AlertPage implements OnInit {
 
     const input = await this.alertCtrl.create({
       header: 'Input',
-      subHeader: 'Ingrese su nombre:',
+      subHeader: 'Ingrese su nombre y feha de nacimiento:',
       inputs: [
         {
           name: 'txtNombre',
           type: 'text',
           placeholder: 'Nombre'
+        },
+        // input date with min & max
+        {
+          name: 'fecha',
+          type: 'date',
+          
+          
         }
       ],
       buttons: [
@@ -39,6 +47,7 @@ export class AlertPage implements OnInit {
           handler: ( data ) => {
             console.log('Confirm Ok', data);
             this.titulo = data.txtNombre;
+            this.dob = data.fecha;
           }
         }
       ]

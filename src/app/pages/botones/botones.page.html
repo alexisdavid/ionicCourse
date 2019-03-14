@@ -1,0 +1,44 @@
+<ion-header no-border>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/">
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>botones</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="secondary">
+        <ion-icon name="star"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>botones normales</h4>
+  <ion-button size="small" expand="full">
+    small
+  </ion-button>
+
+  <ion-button size="default" expand="full">
+    default
+  </ion-button>
+
+  <ion-button size="large" expand="full">
+    large
+  </ion-button>
+  <h4>router hacia otra pagina</h4>
+  <ion-button class="top20" expand="full" [routerLink]="['/alert']" color="tertiary">
+    /alert
+  </ion-button>
+</ion-content>
