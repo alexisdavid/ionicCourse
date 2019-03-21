@@ -8,8 +8,45 @@ import { Component, OnInit } from '@angular/core';
 export class CheckPage implements OnInit {
 
   constructor() { }
+  data = [
+    {
+      name: 'primary',
+      state: true
+    },
+    {
+      name: 'secondary',
+      state: false
+    },
+    {
+      name: 'danger',
+      state: false
+    },
+    {
+      name: 'light',
+      state: false
+    },
+    {
+      name: 'dark',
+      state: false
+    },
+    {
+      name: 'medium',
+      state: false
+    },
+    {
+      name: 'tertiary',
+      state: false
+    },
+    {
+      name: 'success',
+      state: false
+    }
+  ]
 
   ngOnInit() {
   }
+  onClick(i) {
+    console.log(i);
 
+  }
 }
