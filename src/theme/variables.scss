@@ -74,4 +74,55 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // twiter
+  --ion-color-twiter: #008dfb;
+  --ion-color-twiter-rgb: 0,141,251;
+  --ion-color-twiter-contrast: #ffffff;
+  --ion-color-twiter-contrast-rgb: 255,255,255;
+  --ion-color-twiter-shade: #007cdd;
+  --ion-color-twiter-tint: #1a98fb;
+
+  --ion-color-personalizado: #8f84dc;
+  --ion-color-personalizado-rgb: 143,132,220;
+  --ion-color-personalizado-contrast: #000000;
+  --ion-color-personalizado-contrast-rgb: 0,0,0;
+  --ion-color-personalizado-shade: #7e74c2;
+  --ion-color-personalizado-tint: #9a90e0;
+  // footers
+  --ion-color-footers: #dc38ff;
+  --ion-color-footers-rgb: 220,56,255;
+  --ion-color-footers-contrast: #ffffff;
+  --ion-color-footers-contrast-rgb: 255,255,255;
+  --ion-color-footers-shade: #c231e0;
+  --ion-color-footers-tint: #e04cff;
+
 }
+
+// twiter
+.ion-color-twiter {
+  --ion-color-base: var(--ion-color-twiter) !important;
+  --ion-color-base-rgb: var(--ion-color-twiter-rgb) !important;
+  --ion-color-contrast: var(--ion-color-twiter-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-twiter-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-twiter-shade) !important;
+  --ion-color-tint: var(--ion-color-twiter-tint) !important;
+}
+// personalizado
+.ion-color-personalizado {
+  --ion-color-base: var(--ion-color-personalizado) !important;
+  --ion-color-base-rgb: var(--ion-color-personalizado-rgb) !important;
+  --ion-color-contrast: var(--ion-color-personalizado-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-personalizado-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-personalizado-shade) !important;
+  --ion-color-tint: var(--ion-color-personalizado-tint) !important;
+}
+.ion-color-footers {
+  --ion-color-base: var(--ion-color-footers) !important;
+  --ion-color-base-rgb: var(--ion-color-footers-rgb) !important;
+  --ion-color-contrast: var(--ion-color-footers-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-footers-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-footers-shade) !important;
+  --ion-color-tint: var(--ion-color-footers-tint) !important;
+}
+
