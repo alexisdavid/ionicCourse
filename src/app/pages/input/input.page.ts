@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { stripGeneratedFileSuffix } from '@angular/compiler/src/aot/util';
 
 @Component({
   selector: 'app-input',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputPage implements OnInit {
 nombre: string;
+
+ usuario={
+   email: "",
+   password: ""
+ };
   constructor() { }
 
   ngOnInit() {
+  }
+  enviarData(){
+    console.log(this.usuario);
+    
   }
 
 }
