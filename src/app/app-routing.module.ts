@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'date-time', loadChildren: './pages/date-time/date-time.module#DateTimePageModule' },
   { path: 'fab', loadChildren: './pages/fab/fab.module#FabPageModule' },
   { path: 'grid-page', loadChildren: './pages/grid-page/grid-page.module#GridPagePageModule' },  { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
-  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' }
+  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
+  { path: 'lista', loadChildren: './pages/lista/lista.module#ListaPageModule' }
 
 
 
