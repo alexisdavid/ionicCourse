@@ -14,7 +14,9 @@ const routes: Routes = [
   { path: 'fab', loadChildren: './pages/fab/fab.module#FabPageModule' },
   { path: 'grid-page', loadChildren: './pages/grid-page/grid-page.module#GridPagePageModule' },  { path: 'infinite-scroll', loadChildren: './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
   { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
-  { path: 'lista', loadChildren: './pages/lista/lista.module#ListaPageModule' }
+  { path: 'lista', loadChildren: './pages/lista/lista.module#ListaPageModule' },
+  { path: 'list-reorder', loadChildren: './pages/list-reorder/list-reorder.module#ListReorderPageModule' },
+  { path: 'loading', loadChildren: './pages/loading/loading.module#LoadingPageModule' }
 
 
 
