@@ -1,9 +1,18 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
-    <ion-title>modal-info</ion-title>
+    <ion-title>{{nombre}} -- {{pais}}
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
+  <ion-button (click)="salirConArgumentos()" color="primary" expand='full'>
+    salir con argumentos
+  </ion-button>
+
+  <ion-button (click)="salirSinArgumentos()" color="success" expand='full'>
+    salir sin argumentos
+  </ion-button>
 
 </ion-content>
