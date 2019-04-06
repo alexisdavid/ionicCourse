@@ -88,5 +88,10 @@
     "icon": "arrow-round-down",
     "name": "refresher",
     "redirectTo": "/refresher"
+  },
+  {
+    "icon": "search",
+    "name": "searchbar",
+    "redirectTo": "/seaarchbar"
   }
 ]
