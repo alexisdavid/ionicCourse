@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'seaarchbar', loadChildren: './pages/seaarchbar/seaarchbar.module#SeaarchbarPageModule' },
   { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' },
   { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
 
 
 
