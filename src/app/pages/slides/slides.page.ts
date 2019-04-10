@@ -38,6 +38,8 @@ export class SlidesPage implements OnInit {
   ngOnInit() {
   }
   onClick() {
+    // hay que añadir la clase animated fadeOut por que hay problemas
+    // en ios, la sacamos de la pagina de animatedcss y la pusimos en global css
     this.ocultar = "animated fadeOut fast"
     this.navctrl.navigateBack("/");
 
