@@ -1,0 +1,69 @@
+<app-header titulo='segment con skeleton text'></app-header>
+<ion-toolbar>
+  <!-- Default Segment -->
+  <ion-segment (ionChange)="segmentChanged($event)" color="tertiary" #precargado>
+
+    <ion-segment-button value="todos">
+      <ion-label>todos</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="Dc comics">
+      <ion-label>Dc comics</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="Marvel comics">
+      <ion-label>Marvel comics</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+
+</ion-toolbar>
+<ion-content>
+  <ion-list>
+    <ion-item class="animated fadeIn" *ngFor="let heroe of (heroes | async) | filtro: textoBusqueda: 'publisher'">
+      <ion-label>
+        <h3>
+          {{heroe.superhero}}"
+
+          <small>{{heroe.alter_ego}}</small>
+        </h3>
+        <p>{{ heroe.first_appearance}}
+        </p>
+      </ion-label>
+      <ion-label slot="end" text-right>{{heroe.publisher}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+
+  <!-- skeleton text -->
+
+  <ion-list *ngIf="(heroes | async) === null">
+
+    <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1]" class="animated pulse infinite">
+      <ion-label>
+        <ion-label slot="start">
+          <h3>
+            <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+          </h3>
+          <p>
+            <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+          </p>
+          <h3>
+            <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+          </h3>
+        </ion-label>
+
+      </ion-label>
+      <ion-label slot="end" text-right>
+        <ion-skeleton-text animated style="width: 40%"></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+
+
+
+
+  </ion-list>
+
+
+</ion-content>

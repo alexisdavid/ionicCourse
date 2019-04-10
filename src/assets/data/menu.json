@@ -93,5 +93,10 @@
     "icon": "search",
     "name": "searchbar",
     "redirectTo": "/seaarchbar"
+  },
+  {
+    "icon": "copy",
+    "name": "segment",
+    "redirectTo": "/segment"
   }
 ]
